@@ -5,29 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pika</title>
   </head>
+  <link rel="stylesheet" href="pika.css" />
   <body>
     <!-- Header satrt here -->
-    <header class="bg bg-green-700 p-4">
+    <header class="bg--color p-4 rounded-b-xl sticky top-0">
       <!-- Pika Logo -->
-      <nav class="flex justify-between text-white items-center px-4">
-        <h1 class="flex items-center gap-2">
+      <nav
+        class="flex justify-between text-white items-center px-4 text-center text-sm font-serif font-medium"
+      >
+        <h1 class="flex items-center gap-1 cursor-pointer">
           <img class="h-6" src="/images/logo01.png" alt="" /><span>Pika</span>
         </h1>
         <div class="hidden md:flex space-x-4">
           <ul class="flex gap-4">
-            <li>Home</li>
-            <li>Features</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
         </div>
-        <div class="flex gap-2">
-          <button>Sign in</button>
-          <button>Sign up</button>
+        <div class="flex gap-2 text-green-700 text-center">
+          <button class="bg-neutral-200 p-1 rounded-lg">Sign in</button>
+          <button class="bg-neutral-200 p-1 rounded-lg">Sign up</button>
         </div>
       </nav>
     </header>
     <!-- Header ends here -->
+
+    <!-- Hero start -->
+    <div
+      class="bg-contain bg-no-repeat md:bg-cover bg-[url('/images/pexels-kampus.png')] lg:bg-[url('/images/hero.png')] min-h-[700px] h-screen colors:'#006400' md:pt-[10rem] pt-[1rem]"
+    >
+      <article
+        class="flex flex-col bg-white/90 max-w-[300px] mx-6 font-serif p-2 lg:p-6 rounded-xl gap-2 lg:gap-4"
+      >
+        <h2
+          class="font-semibold text-base lg:text-2xl max-w-[200px] lg:max-w-[250px] text--color"
+        >
+          Seamless Shopping, Fast Deliveries, Anywhere You Are
+        </h2>
+        <p
+          class="font-light text-xs sm:text-sm lg:text-sm text-gray-500 max-w-[270px]"
+        >
+          Discover a marketplace that connects you with local vendors and fast,
+          reliable riders. Enjoy secure payments and real-time delivery
+          tracking.
+        </p>
+        <button
+          class="bt--bg--color text-bt--color rounded-full w-[120px] text-sm font-extralight p-2"
+        >
+          Get Started
+        </button>
+      </article>
+    </div>
+    <!-- Hero ends here -->
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
